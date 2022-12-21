@@ -1,0 +1,1010 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NAPKINS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/ddf53bab6d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.box{
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    padding: 10px;
+    background: rgba(255, 255, 255, .2);
+    text-align: justify;
+    font-size: larger;
+    
+}
+body{
+    background: #FFABE1;
+}
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+   
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family:  sans-serif;
+  background-color:#ffabe1;
+  overflow: hidden;
+  
+}
+li{
+	list-style: none;
+  color:rgb(133, 32, 18);
+}
+.useful-link h2{
+	padding-bottom: 15px;
+	font-size: 20px;
+    font-weight: 600;
+}
+.useful-link img{
+	padding-bottom: 15px;
+}
+.use-links{
+	line-height: 32px;
+}
+.use-links li i{
+	font-size: 14px;
+    padding-right: 8px;
+    color: #898989;
+}
+.use-links li a{
+	color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+	color: #777777;
+}
+.use-links li a:hover{
+	color: #000;
+}
+.logo {
+  text-transform: uppercase;
+color:rgb(133, 32, 18);
+  letter-spacing: 20px;
+  animation: fadeIn 2s;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.new-por{
+  padding:30px;
+  background-color: #ffabe1;
+}
+.logo-1{
+  text-align: center;
+}
+.about-title{
+  text-align: center;
+}
+.nav-link a {
+  color:rgb(133, 32, 18);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+
+
+}
+.nav-link li {
+  list-style: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(133, 32, 18);;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+.new-text{
+  font-size: 25px;
+  text-decoration: dotted;
+  padding:20px;
+}
+.burger{
+  display: none;
+}
+@media screen and (max-width:1024px) {
+  .nav-link {
+      width: 70%;
+  }
+  .footer-items {
+		width: 100%;
+        animation: fadeIn 2s;
+	}
+}
+@media screen and (max-width:768px) {
+  body {
+    overflow-x: hidden;
+  }
+  #new-class{
+    background-color:white ;
+  }
+  .new-text{
+    text-align: center;
+  }
+  .logo-h{
+      padding:5px;
+      color:rgb(133, 32, 18);
+      margin-bottom: 40px;
+      animation: fadeIn 2s;
+  }
+  .nav-link {
+      position: absolute;
+      right: 0px;
+      height: 70vh;
+      top: 9vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      transform: translateX(100%);
+      transition: transform 0.6s ease-in-out;
+  }
+
+  
+  .nav-link li {
+      margin: 30px;
+
+  }
+
+  .burger {
+      display: block;
+      cursor: pointer;
+      color:rgb(133, 32, 18);
+      margin-bottom: 40px;
+  }
+
+  .nav-active {
+      transform: translateX(0%);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    
+    text-align: center;
+
+}
+#over{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFABE1;
+}
+.project-title{
+    text-align: center;
+    padding:20px;
+    background: #FFABE1;
+    font-family: 'Libre Baskerville', serif;
+    animation: fadeIn 2s;
+    
+}
+.topic{
+    background: #FFABE1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    animation: fadeIn 2s;
+    font-family: 'Libre Baskerville', serif;
+  }
+.logo{
+    text-align: center;
+    padding:10px;
+    background: #FFABE1;
+    animation: fadeIn 2s;
+}
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.break{
+    line-height: 1.5;
+}
+.container{
+  
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 260px;
+    height: 205px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition:  0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 420px;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 200px;
+    height: 270px;
+    top: -0px;
+    left: 20px;
+    z-index: 1;
+  
+}
+.por-1{
+    width:100%;
+    margin-top:50px;
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.dropbutton {
+  background-color: #FFABE1;
+  color: rgb(133, 32, 18);
+  margin-top: 16px;
+ font-weight: 550;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+ 
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {background-color: #FFABE1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #FFABE1;
+}
+
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer {
+	width: 100%;
+	background: white;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 padding: 30px 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 box-sizing: border-box;
+	 justify-content: center;
+ }
+
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: black;
+    animation: fadeIn 2s;
+}
+
+.footer-items p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+	color: black;
+    animation: fadeIn 2s;
+}
+
+.footer-items h1 {
+	color: black;
+    animation: fadeIn 2s;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: white;
+	color: #ff9800;
+	background-color: #ff9800;
+	border: 0px;
+}
+
+ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;	
+ }
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: #ff9800;
+}
+
+ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;
+	color: black;
+	transition: 0.5s;
+}
+
+.social-media i:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: white;
+	color: black;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+	.footer-items {
+		width: 100%;
+	}
+}
+/* for mobile screen view */
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+      
+                <div class="logo">
+                 
+                    <h4 class="logo-h"><b>PINNKY BEST</b></h4>
+                </div>
+            
+                <ul class="nav-link">
+                    <li><a href="INDEX.html"><b>Home</b> </a></li>
+                    <div class="dropdown">
+                        <button class="dropbutton " id="new-class"><b>Products</b> </button>
+                        <div class="dropdown-content">
+                        <a href="products.html"><b>PHENYL</b> </a>
+                        <a href="napkins.html"><b>NAPKINS</b> </a>
+                   
+                        </div>
+                      </div>
+                    
+                    <li><a href="napkins.html"><b></b> </a></li>
+                    <li><a href="#CONTACT US"><b>Contact</b></a></li>
+                </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            </nav>
+    
+        </header>
+        
+        <div class="new-por">
+        <h1 class="project-title">PINNKY BEST MASS ENTREPRISES PRODUCTS</h1>
+        <div class="logo"><img src="LOGO (2).png" width="100px;"></div>
+        <h1 class="project-title">ORGANIC SANITARY NAPKINS</h1>
+       
+
+        <div class="new-text">
+           
+          
+            <p class="para">Pinnky Best encourages women embrace their bodies and celebrate life. Fruit Gum layer are far better than the chemical gel based and non-biodegradable napkins. Our napkins do come with Anion strips. Keep choosing the fruit gum layered and bamboo napkins for irritation free and hygenic menstruation. </p>
+            <p class="para"> Pinnky Best pads are designed to meet your specific needs and are available across various sizes and different forms. Explore our wide rannge of Sanitary pads and select the one that fits your needs</p>
+          
+    </div>
+
+        <h1 class="topic">THICK DRY NET PAD</h1></div>
+       
+        <div class="box">
+            
+        <p>Pinnky Best gives you No.1 Hygenic Protection. <br>
+            * It is made of wood pulp. <br>
+             * This makes pad more absorbant and neutralizes odor. <br>
+             * It has germ-lock technology which locks uoto 100% wetness, odour & germs.
+             </p> 
+        </div>
+       
+        <section id="over">
+        <div class="container">
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src='Picture1-removebg.png'>
+                </div>
+                <div class="content">
+                    <h2>THICK XL DRY NET PADS</h2><br>
+                    <p  class="break"> 
+                        QUANTITY: 32 Pcs
+                    </p>
+                    <div class="product-bottom-details"> <br>
+                        <div class="product-price"><small>₹400 </small> ₹230</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1"src="Picture2-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>THICK XXL DRY NET PADS</h2><br>
+                    <p  class="break">
+                        QUANTITY: 7 Pcs
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small> ₹105 </small> ₹50</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture3-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>THICK XL DRY NET PADS</h2><br>
+                    <p class="break">
+                        QUANTITY: 7 Pcs
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹55 </small> ₹45</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+           
+    </section>
+    <h1 class="topic">ULTRA THIN DRY NET PAD </h1> <br>
+    <div class="box">
+            
+        <p>Pinnky Best gives you No.1 Hygenic Protection. <br>
+            * It is made of wood pulp. <br>
+            * This makes this pad more absorbant and neutralizes odor. <br>
+            * It has germ-lock technology which locks uoto 100% wetness, odour & germs. <br>
+           * Dry net cover helps in long lasting best dry feel. It's Extra absorbent channel, controls heavy flows pad wetness for long lasting best dry feel. 
+        </p> 
+        </div>
+    <section id="over">
+        
+            
+            
+        <div class="container">
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src='Picture5-removebg.png'>
+                </div>
+                <div class="content">
+                    <h2>ULTRA THIN DRY NET PAD-XL</h2><br>
+                    <p  class="break"> 
+                         Quantity: 7pcs
+                       <br>
+
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹:75 </small> ₹:60</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture5-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>ULTRA THIN DRY NET PAD-XL</h2><br>
+                    <p  class="break">
+                         <br>
+                         Quantity: 20pcs
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹165 </small> ₹140</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+        <div class="card">
+            <div class="badge">SALE</div>
+            <div class="imgBx">
+                <img class="por-1" src="Picture5-removebg.png">
+            </div>
+            <div class="content">
+                <h2> ULTRA THIN DRY NET PAD-XL</h2><br>
+                <p  class="break">
+                    Quantity: 20pcs
+                     <br>
+                   
+                </p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>₹165 </small> ₹140</div>
+                    <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <h1 class="topic">ANION PANTY LINER </h1> <br>
+    <div class="box"> 
+        <p> 
+            Pinnky Best provides sanitary pads that are equipped with Anion Panty Liners which prove to be the best in the following ways: <br>
+*Relief from sore throat, bronchial cough and nausea. <br>
+* Relief from sinus congestion and inflammation. <br>
+* More effective functioning of all body systems. <br>
+* Decrease depression, irritability, and tension. <br>
+* Reduction in the severity of Asthma Attacks. <br>
+* Improves sleep and relaxation. <br>
+* Normalizes Hormone Imbalances. <br>
+* Relief from allergies and migraine/headaches. <br>
+* Natural detoxification of the body. <br>
+* Strengthens Immune System. <br>
+* Increases work productivity and alertness. <br>
+* Improved Blood circulation/flow. <br>
+* Balances the pH of various body fluids. <br>
+
+        </p> 
+       
+        </div>
+    <section id="over">
+        
+        <div class="container">
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src='Picture9-removebg.png'>
+                </div>
+                <div class="content">
+                    <h2>ANION PANTY LINER 180MM  </h2><br>
+                    <p  class="break"> 
+                         BAMBOO 20PCS
+                       <br>
+
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹150 </small> ₹130</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture7-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>ANION PANTY LINER 155MM </h2><br>
+                    <p  class="break">
+                         <br>
+                         WITHOUT WINGS 32PCS
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹115 </small> ₹99</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture7-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>ANION PANTY LINER 180MM </h2><br>
+                    <p  class="break">
+                        WITH WINGS 32PCS
+                         <br>
+                        
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹155 </small> ₹133</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="topic">BAMBOO COTTON SHEET </h1> <br>
+    <div class="box"> 
+        <p> 
+            Pinnky Best Ultra Thin Dry Net Pads gives you No.1 Softness and Airy Frshness during your periods. <br>
+            * Its longer length and wider back ensures that you are protected from leaks from all sides. <br>
+           * This Ultra Thin Dry Net Pad is made of cotton sheet which are gentle on your skin as they are very soft, prevent rashes and irritation. <br>
+           * It is dermatologically tested as it prevents the growth of bacteria. <br>
+           * PinnkyBest  sanitary napkins feature a double-wing shape for a better grip to keep the pad in place even during prolonged use. <br>
+           * The air laid paper proves to provide extra softness & freshness throughout the night which induces better sleep. <br>
+        </p> 
+        </div>
+    <section id="over">
+        
+        <div class="container">
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src='Picture10-removebg.png'>
+                </div>
+                <div class="content">
+                    <h2>BAMBOO COTTON SHEET-XL  </h2><br>
+                    <p  class="break"> 
+                        Quantity: 7PCS
+                       <br>
+
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹145 </small> ₹120</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture10-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>BAMBOO COTTON SHEET-XXL </h2><br>
+                    <p  class="break">
+                         <br>
+                         Quantity: 20PCS
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹280 </small> ₹250</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture10-removebg.png">
+                </div>
+                <div class="content">
+                    <h2>BAMBOO COTTON SHEET-XXL+ </h2><br>
+                    <p  class="break">
+                        Quantity: 7PCS
+                         <br>
+                        
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹165 </small> ₹140</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="topic">ULTRA THIN COTTON SHEET </h1> <br>
+    <div class="box"> 
+        <p> 
+            Pinnky Best Ultra Thin Dry Net Pads gives you No.1 day & night protection. <br>
+            * Its longer length and wider back ensures that you are protected from leaks from all sides. br
+           * This Ultra Thin Dry Net Pad is made of cotton sheet which are gentle on your skin as they are very soft, prevent rashes and irritation. They provide you with excellent absorbency, are also breathable since there is no plastic. <br>
+           * It is dermatologically tested as it prevents the growth of bacteria.
+        </p> 
+        </div>
+    <section id="over">
+        <div class="container">
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src='Picture13-removebg-preview.png'>
+                </div>
+                <div class="content">
+                    <h2>ULTRA THIN COTTON TOP SHEET-XL  </h2><br>
+                    <p  class="break"> 
+                        Quantity: 7PCS
+                       <br>
+
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹95 </small> ₹70</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">SALE</div>
+                <div class="imgBx">
+                    <img class="por-1" src="Picture14-removebg-preview.png">
+                </div>
+                <div class="content">
+                    <h2>ULTRA THIN COTTON TOP SHEET-XXL</h2><br>
+                    <p  class="break">
+                         <br>
+                         Quantity: 7PCS
+                    </p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>₹100 </small> ₹80</div>
+                        <div class="product-price"><br> Buy 3 Get 1 Free</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <div class="footer">
+        <div class="inner-footer">
+      
+      <!--  for company name and description -->
+          <div class="footer-items">
+            <h1>PINNKY BEST</h1>
+            <p> We have Economy, Standard and premium segment in most of our products. We can offer all this in bulk quantity and in smaller packaging.
+                At Pinnky Best™ organization, we understand the need to meet the growing requirements of consumers </p>
+          </div>
+     
+      
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div> <!--for the underline -->
+              <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="napkins.html"><li>Napkins</li></a>
+                <a href="products.html"><li>Home Disinfectants</li></a>
+                <a href="https://www.google.com/maps?q=11.6891946,78.0799136&z=17&hl=en"><li>Map</li></a>
+              </ul>
+          </div>
+      
+      <!--  for some other links -->
+     
+      <!--  for contact us info -->
+          <div class="footer-items" id="CONTACT US">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+              <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>88778729216</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>9443307677</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>8345290969</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>pinnkybest@gmail.com</li>
+              </ul>
+            </div> 
+            
+      <!--   for social links -->
+              <!-- <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </div>  -->
+          </div>
+          <div class="social-media">
+            <img src="LOGO (2).png" width="100px;">
+          </div> 
+      </div>
+  
+        
+      <!--   Footer Bottom start  -->
+        <div class="footer-bottom">
+          Copyright &copy; Pinnky best 2022.
+        </div>
+      </div>
+        
+    </body>
+    <script src="index.js"></script>
+</html>

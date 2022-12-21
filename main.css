@@ -1,0 +1,25 @@
+body{
+    background-color: #FFABE1;
+}
+h1{
+    color: rgb(133, 32, 18);
+    font-style: italic;
+}
+.pinky-about{
+    font-size:17px;
+    color:black;
+    letter-spacing: 1px;
+  
+
+}
+.paralex{
+   margin-top:50px;
+}
+.carousel-inner > .item > img {
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin: auto;
+  }
+  /* rgb(170, 106, 131)*/
+  
